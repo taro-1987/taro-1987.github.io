@@ -1,0 +1,212 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+/*ここからメインのスタイル*/
+.top-wrapper {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png) ;
+  background-size: cover;
+}
+.top-container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  color: white;
+}
+.main-copy {
+  font-size: 45px;
+  letter-spacing: 5px;
+  opacity: 0.7;
+}
+.sub-copy {
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+.btn a {
+  display: inline-block;
+  padding: 8px 24px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+.btn a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn .new {
+  background-color: #239b76;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.btn p {
+  margin-bottom: 15px;
+}
+
+.btn .facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.btn .twitter {
+  background-color: #55acee;
+}
+.fa {
+  margin-right: 5px;
+}
+/*ヘッダーのスタイル*/
+header {
+  width: 100%;
+  height: 65px;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header-item {
+  width: 1170px;
+  margin: 0px auto;
+  
+}
+.header-logo {
+  float: left;
+  width: 124px;
+  margin-top: 20px;
+ }
+
+.header-login {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  display: block;
+  line-height: 65px;
+  padding: 0px 25px;
+  color: white;
+}
+
+.header-login:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/*レッスン一覧のスタイル*/
+.lesson-wrapper {
+  background-color: #f7f7f7;
+   height: 580px;
+   text-align: center;
+}
+.lesson-wrapper h1 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-weight: normal;
+  font-size: 24px;
+  color: #5f5d60;
+}
+.lesson-menu {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesson {
+  width: 25%;
+  position: relative;
+  /*border: 2px solid ;*/
+}
+
+.lesson-icon {
+  width: 80%;
+  margin: 0 auto;
+  /*border: 2px solid ;*/
+}
+.lesson-icon p {
+  position: absolute;
+  top:100px;
+  width: 80%;
+  color: white;
+  /*border: 2px solid ;*/
+}
+
+.lesson-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+}
+/*ここからメッセージ部分のスタイル*/
+.messeage-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.messeage-container h1 {
+  color: #5f5d60;
+  font-size: 24px;
+}
+.messeage-container h2 {
+  color: #5f5d60;
+  font-size: 18.72px
+}
+
+.messeage-container a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px 40px;
+  background-color: #5dca88;
+  opacity: 0.8;
+  color: white;
+  box-shadow: 0px 7px #1a7940;
+  border-radius: 4px;
+}
+
+.messeage-container a:hover {
+  opacity: 1;
+  cursor: pointer; 
+}
+
+.messeage-container a:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+/*ここからフッターのスタイル*/
+footer{
+  border-top: 1px #eee solid;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+
+.footer-container img {
+ width: 124px; 
+}
+
+.footer-container p {
+ font-size: 12px; 
+ color: #b3aeb5;
+}
